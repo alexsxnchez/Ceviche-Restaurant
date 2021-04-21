@@ -1,0 +1,221 @@
+
+/* -----------------------------------------------------------------------
+  Table of Contents
+
+  1. General Setup
+    1.1 Global Variables
+    1.2 HTML
+    1.3 Utility Classes
+    1.4 Headers
+    1.5 Buttons
+
+  2. Header
+
+  3. Main
+  
+  4. Footer
+----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+  1. General Setup
+ */
+
+ /* 1.1 Global Variables */
+:root {
+
+  /* Font Families */
+  --generalFontFamily: 'Prompt', sans-serif;
+  --headingFontFamily: 'Frank Ruhl Libre', serif;
+  ;
+
+  /* Colours */
+  --lightGrey: #888;
+  --darkGrey: #666;
+  --vDarkGrey: #555;
+  --highlightRed: #db0000;
+  --paleRed: #ff5959;
+
+  /* Margins */
+  --generalSpacing: 1.5em;
+
+  /* Borders */
+  --separator: 2px solid var( --lightGrey );
+
+} 
+
+/* 1.2 HTML */
+html {
+  box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body {
+  margin:0;
+  font-family: var( --generalFontFamily );
+}
+
+/* 1.3 Utility Classes */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+
+.pageWrapper {
+  max-width:1200px;
+  margin:0 auto;
+  position:relative;
+}
+
+.centerText {
+  text-align: center;
+}
+
+
+/* 1.4 Headers */
+h1 {
+  font-family: var( --headingFontFamily );
+  font-size: 4em;
+  margin-bottom: .25em;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+h1 a {
+  color: var( --vDarkGrey );
+}
+
+h1 a:link {
+  text-decoration: none;
+}
+
+h2 {
+  color: var( --vDarkGrey );
+  font-family: var( --headingFontFamily );
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: var( --highlightRed );
+  font-family: var( --generalFontFamily );
+  font-size: 2em;
+  font-style: bold;
+}
+
+main {
+  padding: 1em 3em;
+}
+
+/* 1.5 Buttons */
+.submitButton {
+  background: transparent;
+  background-color: var( --highlightRed );
+  border-color: var( --highlightRed );
+  border-radius: 10px;
+  border-style: solid;
+  color: white;
+  font-family: var( --generalFontFamily );
+  font-size: 1.1em;
+  font-style: bold;
+  padding: .5em var( --generalSpacing );
+}
+/*---------------------------------------------------------------
+  2. Header 
+*/
+/* Banner */
+.bannerContent {
+  overflow: auto;
+  position: relative;
+}
+
+.bannerImageDiv {
+  overflow: auto;
+  float: left;
+  max-width: 50%;
+}
+
+#bannerImage {
+  border-right: var( --separator );
+  width: 100%;
+  margin: var( --generalSpacing ) 0 0 0;
+  padding: 0 2em;
+}
+
+.bannerTextDiv {
+  padding: var( --generalSpacing );
+  text-align: center;
+  float: right;
+  margin: var( --generalSpacing ) 10% 0 0;
+}
+
+.slogan {
+  border-top: var( --separator );
+  color: var( --darkGrey );
+  font-family: var( --generalFontFamily );
+  margin-top: var( --generalSpacing );
+  padding: .5em 0;
+}
+
+.logo {
+  margin: var( --generalSpacing );
+  padding: var( --generalSpacing );
+}
+
+/* Main Navigation */
+.navDiv {
+  display: block;
+  margin-top: var( --generalSpacing );
+  text-align: center;
+}
+
+.navigation {
+  display: inline-block;
+  border-top: var( --separator );
+  border-bottom: var( --separator );
+  padding: 0 var( --generalSpacing );
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 1em;
+}
+
+.navigation li {
+  display: inline-block;
+  list-style-type: none;
+  max-width: 40%;
+  margin: .5em 4rem;
+}
+
+.navDiv a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navDiv a:link {
+  color: var( --highlightRed );
+}
+
+#home {
+  color: var( --highlightRed );
+}
+
+.navDiv a:visited {
+  color: var( --paleRed );
+}
+
+/*---------------------------------------------------------------
+  3. Main 
+*/
+
+
+/*---------------------------------------------------------------
+  4. Footer 
+*/
+
